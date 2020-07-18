@@ -4,7 +4,9 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import Parent from './components/Parent';
-import Events from './components/Events';
+// import Events from './components/Events';
+// import Todo from "./components/Todo";
+import Style from './components/Style';
 
 // class App extends React.Component {
 //   //constructor
@@ -144,7 +146,9 @@ function App() {
   return (
     // <Parent />
     <div className="App">
-      <Events />
+      {/* <Events /> */}
+      {/* <Todo /> */}
+      <Style />
     </div>
 
   )
