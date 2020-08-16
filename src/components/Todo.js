@@ -9,7 +9,6 @@ class Todo extends Component {
             gender: 'M',
             products: []
         };
-
         // this.handleClick= this.handleClick.bind(this) w twalli matessta3mlch el bind melouta
     }
     handleProduct = (event) => {
@@ -24,7 +23,6 @@ class Todo extends Component {
     }
     handleClick(event) {
         event.preventDefault();
-
         const newP = {
             product: this.state.product,
             price: this.state.price,
@@ -59,7 +57,9 @@ class Todo extends Component {
                         return <div key={index}>
                             {/* {(item.gender === 'M') ?  : <h3>*item: {item.product} / Price: {item.price} / Gender: {item.gender}</h3>} */}
                             {
-                                <h3 onClick={this.handleDeleteByName.bind(this, item.product)} >{(item.gender === 'M') ? "-" : "*"}item: {item.product} / Price: {item.price} / Gender: {(item.gender === 'M') ? "Homme" : "Femme"}</h3>
+                                <h3 onClick={this.handleDeleteByName.bind(this, item.product)} >
+                                    {(item.gender === 'M') ? "-" : "*"}item: {item.product} / Price: {item.price} / Gender: {(item.gender === 'M') ? "Homme" : "Femme"}
+                                </h3>
                             }
                         </div>;
                     })

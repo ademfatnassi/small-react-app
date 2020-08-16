@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Service from './components/Service'
+// import Routes from './routes/';
+// import App from './archives/App';
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App position='tunis' />
+    {/* <App position='tunis' /> */}
+    {/* <Routes /> */}
+    <Service />
   </React.StrictMode>,
   document.getElementById('root')
 );

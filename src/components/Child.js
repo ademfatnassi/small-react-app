@@ -6,7 +6,6 @@ class Child extends React.Component {
         console.log("Clicked Child btn", this.props.send);
         this.props.send('Child');
     }
-
     render() {
         return (
             <button onClick={this.handleChildBtn}>Send To Parent</button>

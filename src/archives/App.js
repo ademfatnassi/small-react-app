@@ -6,7 +6,8 @@ import './App.css';
 // import Parent from './components/Parent';
 // import Events from './components/Events';
 // import Todo from "./components/Todo";
-import Style from './components/Style';
+// import Style from './components/Style';
+import LifeCycle from '../components/LifeCycle'
 
 // class App extends React.Component {
 //   //constructor
@@ -148,7 +149,8 @@ function App() {
     <div className="App">
       {/* <Events /> */}
       {/* <Todo /> */}
-      <Style />
+      {/* <Style /> */}
+      <LifeCycle />
     </div>
 
   )
